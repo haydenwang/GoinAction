@@ -12,21 +12,7 @@ import (
 // init is called prior to main.
 func init() {
 	// Change the device for logging to stdout.
-	fmt.Println("here is my first init??")
-	log.SetOutput(os.Stdout)
-}
-
-// init is called prior to main.
-func init() {
-	// Change the device for logging to stdout.
 	fmt.Println("here is my init.......")
-	log.SetOutput(os.Stdout)
-}
-
-// init is called prior to main.
-func init() {
-	// Change the device for logging to stdout.
-	fmt.Println("here is my another init.......")
 	log.SetOutput(os.Stdout)
 }
 

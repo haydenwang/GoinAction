@@ -12,6 +12,11 @@ type user struct {
 	email string
 }
 
+type userInfor struct {
+	user   user
+	isMale bool
+}
+
 // notify implements a method with a value receiver.
 func (u user) notify() {
 	fmt.Printf("Sending User Email To %s<%s>\n",
@@ -45,4 +50,8 @@ func main() {
 	// declared with a pointer receiver.
 	lisa.changeEmail("lisa@newdomain.com")
 	lisa.notify()
+
+	var ui = userInfor{user: user{email: "mail@mail.com"}}
+
+	fmt.Println("end with ----" + ui.user.email)
 }
